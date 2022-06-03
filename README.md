@@ -4,12 +4,13 @@ It's set to replace the current one, someday in the future.
 
 ## How to debug
 1) Get TamperMonkey or a similar browser plugin and install userscript.js.
-2) Run `npm run dev`
-3) Open dev console on any subreddit and type `cssDebug()`.
+2) Run `npm i`
+3) Run `npm run dev`
+4) Open dev console on any subreddit and type `cssDebug()`.
     - By default it will connect to localhost:1222 but you can supply a custom URL as an argument.
     - That means you can debug remotely if you have port forwarding enabled
     - The server also supports multiple browsers. You can attach both Chrome and Firefox, both will be updated.
-4) When you're satisfied, kill the server with Ctrl+C
+5) When you're satisfied, kill the server with Ctrl+C
 
 ## Code structure
 The stylesheets don't really import one another, I just throw everything into one heap. I don't have enough SCSS expertise to set it up beautifully.
