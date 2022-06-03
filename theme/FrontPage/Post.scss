@@ -1,6 +1,10 @@
 div#siteTable .thing {
     position: relative;
 
+    &:not(.stickied) {
+        min-height: 125px;
+    }
+
     &.stickied {
         padding-top: 8px;
         border-left: solid 4px limegreen;
@@ -62,8 +66,6 @@ div#siteTable .thing {
     }
 
     .entry {
-        min-height: 125px;
-
         p.tagline {
             font-size: 14px;
             color: white;
