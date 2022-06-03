@@ -1,0 +1,156 @@
+div.side {
+    position: relative;
+    z-index: 2;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 4px;
+
+    .nub,
+    a.premium-banner-outer {
+        display: none;
+    }
+
+    .number,
+    .word,
+    .usertext-body * {
+        color: white;
+    }
+
+    .tagline a {
+        color: $cyan;
+    }
+
+    #searchexpando {
+        margin-top: 8px;
+    }
+
+    // Search box
+
+    form#search {
+        margin-bottom: 32px;
+        input[type="text"] {
+            padding: 8px 25px 8px 9px;
+            @include liftedBoxDark;
+            border: none;
+            font-family: $sysFont;
+            &:focus-visible {
+                outline: none;
+            }
+        }
+    }
+
+    // This post was submitted on X, upvotes;
+
+    .linkinfo {
+        @include liftedBoxDark;
+        border: none;
+        padding: 12px 8px;
+        margin-bottom: 32px;
+
+    }
+
+    .login-form.login-form-side {
+        @include liftedBoxDark;
+        border: none;
+        padding: 4px;
+        margin-bottom: 32px;
+    }
+
+    // Submit a new link, text post...
+
+    div.morelink {
+        border: none;
+        background: none;
+        letter-spacing: 0;
+
+        a {
+            padding: 2px 0px;
+            transition: background-color 0.2s;
+            @include liftedBoxDark;
+        }
+
+        &:hover a {
+            background-color: mix($dark, $cyan, 80%);
+        }
+
+        &:active a {
+            background-color: mix($dark, $cyan, 20%);
+        }
+    }
+
+    // Subreddit name box
+    div.spacer .titlebox {
+        @include liftedBoxDark;
+        padding: 8px;
+        margin: 48px 0;
+
+        // Subreddit name
+        h1.redditname a {
+            color: $cyan;
+            &:before {
+                content: "r/";
+                color: mix($dark, $cyan, 40%);
+            }
+        }
+
+        // Flair and moderator widgets
+        div.leavemoderator,
+        form.flairtoggle {
+            background: none;
+            color: darken(white, 20%);
+        }
+
+        .bottom {
+            border-top: none;
+        }
+    }
+
+    // The box below create your own subreddit
+
+    div.sidebox.create div.spacer {
+        background-color: $dark;
+        box-shadow: $elevationShadow;
+        border-radius: 4px;
+        margin-bottom: 48px;
+
+        div.subtitle {
+            color: darken(white, 20%);
+        }
+    }
+
+    // For mod tools and the mod list
+
+    .sidecontentbox {
+        @include liftedBoxDark;
+        padding-top: 8px;
+        padding: 0;
+
+        .content {
+            border: none;
+        }
+        div.title {
+            text-align: center;
+
+            margin-bottom: 0;
+            padding: 6px 0;
+            border-radius: 4px;
+            background-color: limegreen;
+
+            h1 {
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+
+    #moderation_tools, #wikiactions {
+        margin-bottom: 48px;
+
+        .content li a {
+            background-color: transparent;
+            font-weight: bold;
+            padding-left: 4px;
+            font-size: 13px;
+        }
+    }
+}

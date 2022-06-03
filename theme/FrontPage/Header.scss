@@ -1,0 +1,93 @@
+#header[role="banner"] {
+    border-bottom: none;
+    box-shadow: $elevationShadow;
+
+    #header-bottom-left {
+        position: relative;
+        height: 132px;
+        padding-bottom: 32px;
+        background: $cyan;
+
+        #header-img {
+            display: none;
+        }
+
+        .redditname {
+            background-image: url(https://b.thumbs.redditmedia.com/K3aS6qPtjjaVt3W6IV3Ac68AlS0e4NsBuSzElujo7xU.png);
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 132px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+
+            a {
+                display: block;
+                margin: 0px 20px;
+                width: 100%;
+                max-width: 1000px;
+                height: 100%;
+                color: transparent;
+                background: url("//a.thumbs.redditmedia.com/7gFzlTlj23o--d9mWYsBLge586Danu-eykuM9xjxAN4.png") no-repeat
+                    center / contain;
+            }
+        }
+
+        ul.tabmenu {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            height: 32px;
+
+            li {
+                display: table-cell;
+                height: 30px;
+                margin: 0;
+                background-color: $cyan;
+                vertical-align: middle;
+                border-bottom: solid 2px $cyan;
+                transition: border-bottom-color 0.1s;
+
+                a {
+                    padding: 0 16px;
+                    display: inline-block;
+                    color: $dark;
+                    font-size: 16px;
+                    background-color: transparent;
+                    border: none;
+                    vertical-align: middle;
+                    text-transform: capitalize;
+                }
+
+                &.selected {
+                    border-bottom-color: $dark;
+                    background-color: $dark;
+                    transition: border-bottom-color 0s;
+
+                    a {
+                        color: $cyan;
+                    }
+                }
+
+                &:hover {
+                    border-bottom-color: darken($cyan, 40%);
+                }
+            }
+        }
+    }
+
+    #header-bottom-right {
+        height: 32px;
+        padding: 0 8px;
+        font-size: 12px;
+        background-color: $dark;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 0;
+    }
+}

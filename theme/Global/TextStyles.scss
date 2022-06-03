@@ -1,0 +1,11 @@
+* {
+    font-family: $sysFont;
+}
+
+a, .tagline a {
+    color: $cyan;
+}
+
+a.moderator, .stickied-tagline {
+    color: limegreen !important;
+}

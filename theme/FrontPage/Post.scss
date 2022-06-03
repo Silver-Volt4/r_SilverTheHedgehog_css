@@ -1,0 +1,118 @@
+div#siteTable .thing {
+    position: relative;
+
+    &.stickied {
+        padding-top: 8px;
+        border-left: solid 4px limegreen;
+        margin-bottom: 32px;
+        background: linear-gradient(to right, transparentize(limegreen, 0.6), transparent 70%);
+
+        p.title a.title {
+            color: limegreen;
+        }
+    }
+
+    &.last-clicked {
+        border: none;
+    }
+
+    .rank {
+        display: none;
+    }
+
+    div.midcol {
+        font-size: 16px;
+        width: 4.1ex;
+    }
+
+    p.title {
+        a.title {
+            font-size: 20px;
+            color: $cyan;
+        }
+    }
+
+    .thumbnail {
+        border-radius: 35px;
+        margin-left: 10px;
+        margin-right: 12px;
+        background-color: white;
+        height: 70px;
+        box-shadow: $elevationShadow;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        &.self {
+            background: url("//b.thumbs.redditmedia.com/vEkkaLKI1V61EWblS42QMyNPmn_p3HXA0BxvDk3UQsk.png") no-repeat
+                center;
+            background-color: $dark;
+        }
+
+        &.default {
+            background: url("//b.thumbs.redditmedia.com/HgS0bYtUJf7dORGzBE1O4XzlvHttINbMymE0hpewJYU.png") no-repeat
+                center;
+            background-color: $dark;
+        }
+    }
+
+    .entry {
+        min-height: 125px;
+
+        p.tagline {
+            font-size: 14px;
+            color: white;
+            margin-bottom: 2px;
+        }
+
+        .tagline a,
+        .search-result-meta a {
+            color: lighten($cyan, 15%);
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .expando-button {
+            position: absolute;
+            top: -2px;
+            left: 60px;
+            width: 70px;
+            height: 70px;
+
+            &.collapsed {
+                background: url(https://materialdesignicons.com/api/download/84FE90C1-076D-4EA1-B56F-4C2582A39AC3/FFFFFF/1/FFFFFF/0/48)
+                        no-repeat 116% 118% / 38px 38px,
+                    radial-gradient(
+                        circle 14px at 80% 80%,
+                        darken($cyan, 15%) 0%,
+                        darken($cyan, 15%) 96%,
+                        transparent 100%
+                    );
+                background-repeat: no-repeat;
+            }
+
+            &.expanded {
+                background: url(https://materialdesignicons.com/api/download/AECCC94F-C38A-4A97-879E-ACD09F89169A/FFFFFF/1/FFFFFF/0/48)
+                        no-repeat 116% 118% / 38px 38px,
+                    radial-gradient(
+                        circle 14px at 80% 80%,
+                        darken($cyan, 15%) 0%,
+                        darken($cyan, 15%) 96%,
+                        transparent 100%
+                    );
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    &.promoted {
+        background-color: transparent;
+        border: none;
+        opacity: 0.6;
+    }
+}

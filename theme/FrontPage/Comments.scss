@@ -1,0 +1,32 @@
+div.commentarea {
+    .panestack-title {
+        color: white;
+    }
+    .comment .child,
+    .comment .showreplies {
+        border: none;
+    }
+
+    .new-comment .usertext-body {
+        background-color: transparentize($cyan, 0.8);
+        border: none;
+        padding: 2px 8px;
+        margin: 8px 0;
+        border-radius: 4px;
+    }
+
+    .thing.comment {
+        .tagline {
+            font-size: 14px;
+        }
+        .entry {
+            margin-bottom: 16px;
+        }
+        .entry .usertext .md {
+            font-size: 16px;
+            color: white;
+        }
+        border-left: solid 3px $cyan;
+        padding-left: 16px;
+    }
+}

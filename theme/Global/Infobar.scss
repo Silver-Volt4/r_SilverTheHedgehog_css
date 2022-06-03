@@ -1,0 +1,17 @@
+.infobar:not(.commentsignupbar), .reddit-infobar, .gold-accent  {
+    border: none;
+    background-color: $gold;
+    color: black;
+    border-radius: 4px;
+    box-shadow: $elevationShadow;
+
+    a {
+        color: black;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+.gold-accent.comment-visits-box {
+    color: black;
+}

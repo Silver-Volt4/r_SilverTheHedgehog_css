@@ -1,0 +1,18 @@
+.c-btn-primary {
+    background-color: $cyan;
+    border-bottom: none;
+    color: $dark;
+    box-shadow: $elevationShadow;
+
+    transition: 0.2s;
+
+    &:hover {
+        background-color: mix($cyan, $dark, 80%);
+    }
+
+    &:active {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: mix($cyan, $dark, 60%);
+    }
+}

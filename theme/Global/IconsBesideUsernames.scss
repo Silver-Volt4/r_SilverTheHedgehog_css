@@ -1,0 +1,26 @@
+span.userattrs {
+    visibility: hidden;
+}
+
+span.userattrs a {
+    visibility: visible;
+}
+
+span.userattrs a.submitter {
+    color: transparent;
+    background: url("https://b.thumbs.redditmedia.com/3pINlAwPCswcnFNFgPSQ8BhwD8iZk8QVlm3VpAG7FrY.png");
+}
+
+span.userattrs a.submitter {
+    color: transparent !important;
+    background: url("https://b.thumbs.redditmedia.com/3pINlAwPCswcnFNFgPSQ8BhwD8iZk8QVlm3VpAG7FrY.png") no-repeat;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+span.userattrs a.moderator {
+    color: transparent !important;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: url("https://b.thumbs.redditmedia.com/P9VGw55K0uCCDfOuuYDzoWp2KnfM4ueL2qmPQy2Q_5o.png") no-repeat;
+}

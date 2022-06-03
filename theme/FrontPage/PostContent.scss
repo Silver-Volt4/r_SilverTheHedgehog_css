@@ -1,0 +1,43 @@
+div.thing:not(.comment ) div.entry {
+    div.crosspost-preview,
+    form.usertext div.usertext-body .md,
+    .media-preview  {
+        @include liftedBoxDark;
+        background-color: $dark;
+        color: white;
+        border: none;
+        font-size: 16px;
+    }
+
+    div.crosspost-preview {
+        p.title {
+            color: white;
+            font-size: 20px;
+        }
+
+        .tagline {
+            color: white;
+            font-size: 13px;
+        }
+
+        .flairrichtext {
+            // This is set as transparent within the HTML, so we need to use !important :/
+            background-color: white !important;
+        }
+
+        .crosspost-preview-content hr.self-divider {
+            border-top: dotted 1px white;
+        }
+    }
+
+    .media-preview {
+        overflow: auto;
+        position: relative;
+        width: fit-content;
+        width: -moz-fit-content;
+
+        .gallery-nav-bar {
+            padding: 4px 8px;
+        }
+    }
+}
