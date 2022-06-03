@@ -1,7 +1,7 @@
-div.thing:not(.comment ) div.entry {
+div.thing:not(.comment) div.entry {
     div.crosspost-preview,
     form.usertext div.usertext-body .md,
-    .media-preview  {
+    .media-preview {
         @include liftedBoxDark;
         background-color: $dark;
         color: white;
