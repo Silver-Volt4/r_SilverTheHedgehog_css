@@ -46,7 +46,6 @@ div.side {
         border: none;
         padding: 12px 8px;
         margin-bottom: 32px;
-
     }
 
     .login-form.login-form-side {
@@ -101,7 +100,7 @@ div.side {
         }
 
         .bottom {
-            border-top: none;
+            display: none;
         }
     }
 
@@ -143,7 +142,8 @@ div.side {
         }
     }
 
-    #moderation_tools, #wikiactions {
+    #moderation_tools,
+    #wikiactions {
         margin-bottom: 48px;
 
         .content li a {

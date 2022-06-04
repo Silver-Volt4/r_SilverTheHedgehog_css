@@ -1,0 +1,41 @@
+.thing div.midcol {
+    font-size: 16px;
+    width: 4.1ex;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .arrow {
+        width: 100%;
+        height: 24px;
+        background-size: 48px;
+        margin: 0;
+        background-position: center center;
+        &.up {
+            background-image: url("https://materialdesignicons.com/api/download/AECCC94F-C38A-4A97-879E-ACD09F89169A/FFFFFF/1/FFFFFF/0/48");
+        }
+        &.down {
+            background-image: url("https://materialdesignicons.com/api/download/84FE90C1-076D-4EA1-B56F-4C2582A39AC3/FFFFFF/1/FFFFFF/0/48");
+        }
+
+        &.upmod {
+            background-image: url("https://materialdesignicons.com/api/download/AECCC94F-C38A-4A97-879E-ACD09F89169A/FF4500/1/FFFFFF/0/48");
+        }
+        &.downmod {
+            background-image: url("https://materialdesignicons.com/api/download/84FE90C1-076D-4EA1-B56F-4C2582A39AC3/7193FF/1/FFFFFF/0/48");
+        }
+    }
+
+    .score {
+        width: 100%;
+        text-align: center;
+
+        &.likes {
+            color: #ff4500;
+        }
+
+        &.dislikes {
+            color: #7193ff;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+textarea {
+    @include liftedBoxDark;
+    border: none;
+    padding: 8px;
+    font-size: 16px !important;
+    &:focus-visible {
+        outline: none;
+    }
+}

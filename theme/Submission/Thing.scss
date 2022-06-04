@@ -1,8 +1,12 @@
 div#siteTable .thing {
     // This allows us to use position: absolute on the expand arrow.
     position: relative;
+    
+    padding-top: 4px;
+    border-left: solid 4px transparent;
 
-    &:not(.stickied) {
+
+    &:not(.stickied) .entry {
         min-height: 125px;
     }
 
@@ -21,17 +25,12 @@ div#siteTable .thing {
     // Hide the ugly gray overlay around the last clicked element.
     &.last-clicked {
         border: none;
+        border-left: solid 4px transparent;
     }
 
     // Hide numbers, useless in my opinion.
     .rank {
         display: none;
-    }
-
-    // Define the width of the upvote and downvote arrows.
-    div.midcol {
-        font-size: 16px;
-        width: 4.1ex;
     }
 
     // Title of the post
@@ -59,14 +58,14 @@ div#siteTable .thing {
         }
 
         &.self {
-            background: url("https://b.thumbs.redditmedia.com/vEkkaLKI1V61EWblS42QMyNPmn_p3HXA0BxvDk3UQsk.png") no-repeat
-                center;
+            background: url("https://b.thumbs.redditmedia.com/vEkkaLKI1V61EWblS42QMyNPmn_p3HXA0BxvDk3UQsk.png")
+                no-repeat center;
             background-color: $dark;
         }
 
         &.default {
-            background: url("https://b.thumbs.redditmedia.com/HgS0bYtUJf7dORGzBE1O4XzlvHttINbMymE0hpewJYU.png") no-repeat
-                center;
+            background: url("https://b.thumbs.redditmedia.com/HgS0bYtUJf7dORGzBE1O4XzlvHttINbMymE0hpewJYU.png")
+                no-repeat center;
             background-color: $dark;
         }
     }
@@ -87,7 +86,7 @@ div#siteTable .thing {
 
         .expando-button {
             position: absolute;
-            top: -2px;
+            top: 2px;
             left: 60px;
             width: 70px;
             height: 70px;

@@ -16,3 +16,18 @@
         background-color: mix($cyan, $dark, 60%);
     }
 }
+
+button {
+    background-color: white;
+    color: $dark;
+    border: none;
+    padding: 6px 8px;
+    box-shadow: $elevationShadow;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.1s;
+    &:hover {
+        background-color: $cyan;
+        color: white;
+    }
+}
