@@ -1,7 +1,14 @@
+div.thing:not(.comment)[data-is-gallery="true"] div.entry .media-preview {
+    @include liftedBoxDark;
+    background-color: $dark;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
 div.thing:not(.comment) div.entry {
     div.crosspost-preview,
-    form.usertext div.usertext-body .md,
-    .media-preview {
+    form.usertext div.usertext-body .md {
         @include liftedBoxDark;
         background-color: $dark;
         color: white;
