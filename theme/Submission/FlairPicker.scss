@@ -1,0 +1,31 @@
+div.flairselector {
+    padding: 0px !important;
+    border-radius: 4px;
+
+    @include liftedBoxDark;
+    &.drop-choices.active {
+        border: none;
+    }
+
+    h2 {
+        background-color: $cyan;
+        color: $dark;
+        margin-bottom: 8px;
+        padding: 4px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    div.flairoptionpane > ul > li {
+        padding: 8px;
+        margin-bottom: 4px;
+        border-radius: 4px;
+        &:hover {
+            background-color: lighten($dark, 10%);
+        }
+        > div.linkflair > a.title {
+            // In the original CSS, the definition itself is !important, so we have to use !important here too.
+            color: $cyan !important;
+        }
+    }
+}
