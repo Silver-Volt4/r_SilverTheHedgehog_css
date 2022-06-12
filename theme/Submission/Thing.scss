@@ -5,10 +5,7 @@ div#siteTable .thing {
     padding-top: 4px;
     border-left: solid 4px transparent;
 
-
-    &:not(.stickied) .entry {
-        min-height: 125px;
-    }
+    margin-bottom: 48px;
 
     // Green announcement posts
     &.stickied {
