@@ -1,43 +1,15 @@
 body.comments-page {
-    // In comments, always show buttons on the post.
-    div#siteTable .thing .entry ul.buttons {
-        li {
-            visibility: visible;
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-
     // Shuffle around the elements so that the reply button is first.
     // Some people might kill me for this. Oh well
     .thing.comment .entry ul.buttons {
         flex-direction: row-reverse;
         justify-content: flex-end;
-        li:last-of-type {
-            visibility: visible;
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-}
-
-body:not(.comments-page) {
-    .thing .entry ul.buttons li:first-of-type {
-        visibility: visible;
-        opacity: 1;
-        transform: scale(1);
     }
 }
 
 .thing .entry {
-    &:hover ul.buttons li {
-        visibility: visible;
-        opacity: 1;
-        transform: scale(1);
-    }
-
     ul.buttons {
-        font-size: 14px;
+        font-size: 11px;
         display: flex;
         flex-wrap: wrap;
 
@@ -45,10 +17,8 @@ body:not(.comments-page) {
             @include liftedBoxDark;
             margin-right: 8px;
             margin-bottom: 8px;
-            height: 28px;
-            visibility: hidden;
-            opacity: 0;
-            transform: scale(0.95);
+            height: 20px;
+
             transition: 0.2s;
 
             &:hover {
@@ -60,7 +30,7 @@ body:not(.comments-page) {
             }
 
             > * {
-                line-height: 28px;
+                line-height: 20px;
                 vertical-align: middle;
 
                 &.give-gold {
@@ -72,14 +42,6 @@ body:not(.comments-page) {
                 color: white;
             }
 
-            .flairselector {
-                visibility: visible;
-                opacity: 1;
-                transform: scale(1);
-                left: 0 !important;
-                top: 0 !important;
-            }
-
             form span.option.error.active {
                 font-size: 14px;
                 display: block;
@@ -87,7 +49,7 @@ body:not(.comments-page) {
                 margin: 0 -4px;
                 padding: 0 4px;
                 border-radius: 4px;
-                line-height: 28px;
+                line-height: 20px;
 
                 a {
                     vertical-align: top;
@@ -104,16 +66,17 @@ body:not(.comments-page) {
 
 // Icons on the buttons!
 .thing .entry ul.buttons li {
-    a:before {
+    > a:before,
+    form > span > a:before {
         content: "|";
         color: transparent;
         display: inline-block;
-        width: 28px;
-        height: 28px;
+        width: 18px;
+        height: 18px;
         margin-right: 8px;
         // On elements with an unknown action, the icon is a magic wand. Known buttons are re-styled below.
         background: url("https://materialdesignicons.com/api/download/FAAFAACC-4E0D-4688-B583-FC88A782A9B6/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     span.option.error a:before {
@@ -121,110 +84,110 @@ body:not(.comments-page) {
         display: none;
     }
 
-    &.first a:before {
+    &.first > a:before {
         background: url("https://materialdesignicons.com/api/download/FF34C5A8-4433-4B47-A9E5-EB836CFFCEC9/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
-    &.first a.bylink:not(.comments):before {
+    &.first > a.bylink:not(.comments):before {
         background: url("https://materialdesignicons.com/api/download/4D09DDBE-9716-4162-9DA9-B50892241E15/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     a.embed-comment::before {
         background: url("https://materialdesignicons.com/api/download/609A0AB0-05EE-4824-BD40-A4E78F4A74D3/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     a.edit-usertext:before {
         background: url("https://materialdesignicons.com/api/download/BB27CE6C-769A-4C0C-A53C-F1B10B9C4423/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     &.share a:before {
         background: url("https://materialdesignicons.com/api/download/C25D5913-39C7-4215-B372-88F90EE2B6E5/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     &.save-button a:before {
         background: url("https://materialdesignicons.com/api/download/28FFD085-27EC-47A7-88A7-989BECA3DDE0/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     form.hide-button a:before {
         background: url("https://materialdesignicons.com/api/download/4D1385CF-1389-43D3-BD88-A83018434FB6/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     form.del-button a:before {
         background: url("https://materialdesignicons.com/api/download/71CD492D-A1E8-4A7A-961A-51DA30952BAD/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     &.give-gold-button a:before {
         background: url("https://materialdesignicons.com/api/download/icon/png/53D81A11-D8FF-46F4-A0CB-B7F668BA720D/48/ffae00/1/000000/0/0/0/star")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     form.remove-button {
         input[value="spammed"] + span > a:before {
             background: url("https://materialdesignicons.com/api/download/02F70DD2-E16E-43FD-9C2A-267C965E3919/FFFFFF/1/FFFFFF/0/48")
-                no-repeat center / 24px 24px;
+                no-repeat center / 16px 16px;
         }
 
         input[value="removed"] + input + span > a:before {
             background: url("https://materialdesignicons.com/api/download/8E45C70B-EE1A-48AE-B97F-204F1958E788/FFFFFF/1/FFFFFF/0/48")
-                no-repeat center / 24px 24px;
+                no-repeat center / 16px 16px;
         }
     }
 
     form.approve-button a:before {
         background: url("https://materialdesignicons.com/api/download/FC112FD8-5338-49C0-B4E0-FE1816A71E74/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     form[action="/post/distinguish"] a:before {
         background: url("https://materialdesignicons.com/api/download/B1337135-0E57-465F-8C0C-E658C9981A19/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     &.report-button a:before {
         background: url("https://materialdesignicons.com/api/download/9BC1A338-CD03-4D39-BE46-E9DE5EE51A2F/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     form.lock-button a:before {
         background: url("https://materialdesignicons.com/api/download/D711AFDE-2B8D-4932-82AC-A04E7B2810AE/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     form.unlock-button a:before {
         background: url("https://materialdesignicons.com/api/download/E357D5CD-7E42-463B-899A-7D7B038A3E31/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     form.marknsfw-button a:before {
         background: url("https://materialdesignicons.com/api/download/FAFCB184-2AAD-4E83-924F-1C37F1EDF956/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     form.spoiler-button a:before {
         background: url("https://materialdesignicons.com/api/download/122C53AA-C8BC-41B3-89B2-B9A9F8BB56DC/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     a.flairselectbtn:before {
         background: url("https://materialdesignicons.com/api/download/0BE85AB2-0D51-411C-B119-789E9E317216/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     &.crosspost-button a:before {
         background: url("https://materialdesignicons.com/api/download/F0053E35-64B2-45D5-92D6-EE9F8A8839A1/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 
     &.reply-button a:before {
         background: url("https://materialdesignicons.com/api/download/CC3BEE2C-0FEA-46D2-BC53-F7D248AAF47C/FFFFFF/1/FFFFFF/0/48")
-            no-repeat center / 24px 24px;
+            no-repeat center / 16px 16px;
     }
 }
