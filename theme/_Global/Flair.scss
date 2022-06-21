@@ -2,6 +2,10 @@ span.flairrichtext {
     border-radius: 20px;
     box-shadow: $elevationShadow;
     background-color: #ddd;
+
+    &.flaircolordark span {
+        color: black;
+    }
 }
 
 // oh my god this is such a horrible hack

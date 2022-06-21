@@ -1,5 +1,6 @@
 *, textarea {
     font-family: $sysFont;
+    color: #EEE;
 }
 
 a, .tagline a {
@@ -9,3 +10,8 @@ a, .tagline a {
 a.moderator, .stickied-tagline {
     color: limegreen !important;
 }
+
+h2 {
+    color: $cyan;
+}
+
