@@ -7,7 +7,7 @@ body.comments-page {
     }
 }
 
-.thing .entry {
+.thing:not(.collapsed) .entry {
     ul.buttons {
         font-size: 11px;
         display: flex;
@@ -65,8 +65,9 @@ body.comments-page {
 }
 
 // Icons on the buttons!
-.thing .entry ul.buttons li {
+.thing:not(.collapsed) .entry ul.buttons li {
     > a:before,
+    form > a:before,
     form > span > a:before {
         content: "|";
         color: transparent;
@@ -146,7 +147,8 @@ body.comments-page {
             no-repeat center / 16px 16px;
     }
 
-    form[action="/post/distinguish"] a:before {
+    form[action="/post/distinguish"] a:before,
+    form[method="post"] a[data-event-action="distinguish"]:before {
         background: url("https://materialdesignicons.com/api/download/B1337135-0E57-465F-8C0C-E658C9981A19/FFFFFF/1/FFFFFF/0/48")
             no-repeat center / 16px 16px;
     }

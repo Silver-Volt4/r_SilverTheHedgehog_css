@@ -20,11 +20,17 @@ div.commentarea {
             font-size: 14px;
         }
         .entry {
-            margin-bottom: 16px;
+            margin-bottom: 32px;
         }
         .entry .usertext .md {
             font-size: 16px;
             color: white;
+        }
+        &.collapsed {
+            .midcol {
+                display: none;
+            }
+            border: none;
         }
         border-left: solid 3px $cyan;
         padding-left: 10px;

@@ -20,6 +20,7 @@ div.flairselector {
         padding: 8px;
         margin-bottom: 4px;
         border-radius: 4px;
+        border: none;
         &:hover {
             background-color: lighten($dark, 10%);
         }

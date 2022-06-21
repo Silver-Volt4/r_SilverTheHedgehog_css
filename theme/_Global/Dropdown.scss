@@ -1,0 +1,11 @@
+.drop-choices {
+    @include liftedBoxDark;
+    border: none;
+    a.choice {
+        padding: 8px;
+        transition: background-color 0.2s;
+        &:hover {
+            background-color: lighten($dark,10%);
+        }
+    }
+}

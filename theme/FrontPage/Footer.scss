@@ -1,0 +1,18 @@
+.footer-parent {
+    .footer {
+        @include liftedBoxDark;
+        border: none;
+
+        .col:first-of-type {
+            border-left: none;
+        }
+        .col {
+            border-left: solid 1px $cyan
+        }
+        li.title {
+            font-family: $sysFont;
+            font-weight: bold;
+            color: #EEE;
+        }
+    }
+}

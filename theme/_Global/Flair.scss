@@ -1,4 +1,10 @@
 span.flairrichtext {
     border-radius: 20px;
     box-shadow: $elevationShadow;
+    background-color: #ddd;
+}
+
+// oh my god this is such a horrible hack
+span.flairrichtext[style="background-color: transparent; border-color: transparent;"] {
+    background-color: white !important;
 }
