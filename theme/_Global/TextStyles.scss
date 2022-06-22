@@ -11,7 +11,8 @@ a.moderator, .stickied-tagline {
     color: limegreen !important;
 }
 
-h2 {
+h2,
+.commentsignupbar__container .commentsignupbar__title {
     color: $cyan;
 }
 
