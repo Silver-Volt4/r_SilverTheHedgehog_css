@@ -1,7 +1,7 @@
 const fs = require("fs")
-const { compile } = require("./util/compile.js");
+const { build } = require("./util/compile.js");
 
 if (!fs.existsSync("dist")) {
     fs.mkdirSync("dist/")
 }
-fs.writeFileSync("dist/theme.css", compile());
+fs.writeFileSync("dist/theme.css", build());

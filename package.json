@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js",
-    "build": "node build.js"
+    "dev": "concurrently --kill-others \"npm run serveImages\" \"npm run cssServer\"",
+    "cssServer": "node index.js",
+    "build": "node build.js",
+    "serveImages": "http-server ./images"
   },
   "author": "",
   "license": "WTFPL",

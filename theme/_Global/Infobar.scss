@@ -5,8 +5,11 @@
     border-radius: 4px;
     box-shadow: $elevationShadow;
 
-    a {
+    * {
         color: black;
+    }
+
+    a {
         font-weight: bold;
         text-decoration: underline;
     }

@@ -55,13 +55,13 @@ div#siteTable .thing {
         }
 
         &.self {
-            background: url("https://b.thumbs.redditmedia.com/vEkkaLKI1V61EWblS42QMyNPmn_p3HXA0BxvDk3UQsk.png")
+            background: img("TextPost.png")
                 no-repeat center;
             background-color: $dark;
         }
 
         &.default {
-            background: url("https://b.thumbs.redditmedia.com/HgS0bYtUJf7dORGzBE1O4XzlvHttINbMymE0hpewJYU.png")
+            background: img("LinkPost.png")
                 no-repeat center;
             background-color: $dark;
         }
@@ -74,8 +74,8 @@ div#siteTable .thing {
             margin-bottom: 2px;
         }
 
-        .tagline a,
-        .search-result-meta a {
+        .tagline a.author,
+        .search-result-meta a.author {
             color: lighten($cyan, 15%);
             font-weight: bold;
             font-style: italic;
@@ -89,7 +89,7 @@ div#siteTable .thing {
             height: 70px;
 
             &.collapsed {
-                background: url(https://materialdesignicons.com/api/download/84FE90C1-076D-4EA1-B56F-4C2582A39AC3/FFFFFF/1/FFFFFF/0/48)
+                background: img("Expand.png")
                         no-repeat 116% 118% / 38px 38px,
                     radial-gradient(
                         circle 14px at 80% 80%,
@@ -101,7 +101,7 @@ div#siteTable .thing {
             }
 
             &.expanded {
-                background: url(https://materialdesignicons.com/api/download/AECCC94F-C38A-4A97-879E-ACD09F89169A/FFFFFF/1/FFFFFF/0/48)
+                background: img("Unexpand.png")
                         no-repeat 116% 118% / 38px 38px,
                     radial-gradient(
                         circle 14px at 80% 80%,

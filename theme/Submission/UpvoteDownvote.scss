@@ -12,17 +12,17 @@
         margin: 0;
         background-position: center center;
         &.up {
-            background-image: url("https://materialdesignicons.com/api/download/AECCC94F-C38A-4A97-879E-ACD09F89169A/FFFFFF/1/FFFFFF/0/48");
+            background-image: img("Unexpand.png");
         }
         &.down {
-            background-image: url("https://materialdesignicons.com/api/download/84FE90C1-076D-4EA1-B56F-4C2582A39AC3/FFFFFF/1/FFFFFF/0/48");
+            background-image: img("Expand.png");
         }
 
         &.upmod {
-            background-image: url("https://materialdesignicons.com/api/download/AECCC94F-C38A-4A97-879E-ACD09F89169A/FF4500/1/FFFFFF/0/48");
+            background-image: img("Upvoted.png");
         }
         &.downmod {
-            background-image: url("https://materialdesignicons.com/api/download/84FE90C1-076D-4EA1-B56F-4C2582A39AC3/7193FF/1/FFFFFF/0/48");
+            background-image: img("Downvoted.png");
         }
     }
 

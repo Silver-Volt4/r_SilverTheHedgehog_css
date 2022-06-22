@@ -1,3 +1,14 @@
+@media only screen and (max-width: 900px) {
+    #header[role="banner"] {
+        #header-bottom-left {
+            padding-bottom: 64px !important;
+            ul.tabmenu {
+                bottom: 32px !important;
+            }
+        }
+    }
+}
+
 #header[role="banner"] {
     border-bottom: none;
     box-shadow: $elevationShadow;
@@ -13,7 +24,7 @@
         }
 
         .redditname {
-            background-image: url(https://b.thumbs.redditmedia.com/K3aS6qPtjjaVt3W6IV3Ac68AlS0e4NsBuSzElujo7xU.png);
+            background-image: img("background-scribble.png");
             background-size: cover;
             position: absolute;
             top: 0;
@@ -31,8 +42,7 @@
                 max-width: 1000px;
                 height: 100%;
                 color: transparent;
-                background: url("//a.thumbs.redditmedia.com/7gFzlTlj23o--d9mWYsBLge586Danu-eykuM9xjxAN4.png") no-repeat
-                    center / contain;
+                background: img("logo.png") no-repeat center / contain;
             }
         }
 
