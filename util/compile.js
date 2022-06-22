@@ -64,7 +64,7 @@ function build() {
 
         imgEscaped += result.slice(i, result.length);
 
-        return imgEscaped;
+        return "/*https://github.com/rsilverthehedgehog/css*/" + imgEscaped;
     } catch (e) {
         console.log(e)
         return "";
