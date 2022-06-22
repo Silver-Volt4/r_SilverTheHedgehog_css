@@ -1,0 +1,32 @@
+div.subreddit-rules-page {
+    .md-container .md h2 {
+        color: $cyan;
+        font-weight: bold;
+    }
+
+    #subreddit-rule-list {
+        div.subreddit-rule-item {
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.05);
+            }
+            border-radius: 4px;
+
+            span.subreddit-rule-violation-reason {
+                color: silver;
+            }
+
+            div.subreddit-rule-violation-reason-row {
+                padding-bottom: 10px;
+                border-bottom: solid 1px transparentize(white, 0.2);
+            }
+
+            h4 {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .subreddit-rule-add-form-buttons .subreddit-rule-edit-button {
+        color: $cyan;
+    }
+}
