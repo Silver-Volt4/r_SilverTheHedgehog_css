@@ -39,11 +39,12 @@
             a {
                 display: block;
                 margin: 0px 20px;
-                width: 100%;
+                width: 30%;
                 max-width: 1000px;
                 height: 100%;
                 color: transparent;
-                background: img("logo.png") no-repeat center / contain;
+                background: img("logo.png") no-repeat bottom / contain;
+                background-position-y: bottom 10%;
             }
         }
 
