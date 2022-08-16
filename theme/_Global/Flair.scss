@@ -7,8 +7,3 @@ span.flairrichtext {
         color: black;
     }
 }
-
-// oh my god this is such a horrible hack
-span.flairrichtext[style="background-color: transparent; border-color: transparent;"] {
-    background-color: white !important;
-}
