@@ -1,0 +1,24 @@
+.awarding-link[data-award-id="gid_1"] span {
+    // shamelessly stolen from xxfay6
+    background: img("SilverGilding.png") no-repeat;
+    border: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    img {
+        visibility: hidden;
+    }
+    position: relative;
+    &:hover::after {
+        content: "Silver award";
+        position: absolute;
+        width: 100px;
+        top: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $gold;
+        color: black;
+        border-radius: 8px;
+        text-align: center;
+    }
+}
