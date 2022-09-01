@@ -19,6 +19,12 @@ div#siteTable .thing {
         }
     }
 
+    &.spam {
+        padding-top: 8px;
+        background: linear-gradient(to right, transparentize(red, 0.6), transparent 70%);
+        border-left: solid 4px red;
+    }
+
     // Hide the ugly gray overlay around the last clicked element.
     &.last-clicked {
         border: none;

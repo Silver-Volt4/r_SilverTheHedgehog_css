@@ -1,5 +1,7 @@
 div.hover-bubble {
-    background: white;
     @include liftedBoxLight;
     border: none;
+    * {
+        color: black;
+    }
 }
