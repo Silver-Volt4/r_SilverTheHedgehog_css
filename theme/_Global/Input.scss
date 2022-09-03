@@ -5,7 +5,7 @@ input[type=password],
 {
     background-color: lighten($dark,10%);
     border: none !important;
-    color: white;
+    color: $textColor;
     border-radius: 4px;
     padding: 4px;
 }

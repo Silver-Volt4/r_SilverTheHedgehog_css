@@ -1,6 +1,6 @@
 div.commentarea {
     .panestack-title {
-        color: white;
+        color: $textColor;
     }
     .comment .child,
     .comment .showreplies {
@@ -24,7 +24,7 @@ div.commentarea {
         }
         .entry .usertext .md {
             font-size: 16px;
-            color: white;
+            color: $textColor;
         }
         &.collapsed {
             .midcol {

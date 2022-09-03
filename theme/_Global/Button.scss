@@ -28,6 +28,6 @@ button {
     transition: 0.1s;
     &:hover {
         background-color: $cyan;
-        color: white;
+        color: $textColor;
     }
 }

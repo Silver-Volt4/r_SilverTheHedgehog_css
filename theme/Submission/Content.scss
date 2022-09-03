@@ -1,7 +1,7 @@
 div.thing:not(.comment)[data-is-gallery="true"] div.entry .media-preview {
     @include liftedBoxDark;
     background-color: $dark;
-    color: white;
+    color: $textColor;
     border: none;
     font-size: 16px;
 }
@@ -11,19 +11,19 @@ div.thing:not(.comment) div.entry {
     form.usertext div.usertext-body .md {
         @include liftedBoxDark;
         background-color: $dark;
-        color: white;
+        color: $textColor;
         border: none;
         font-size: 16px;
     }
 
     div.crosspost-preview {
         p.title {
-            color: white;
+            color: $textColor;
             font-size: 20px;
         }
 
         .tagline {
-            color: white;
+            color: $textColor;
             font-size: 13px;
         }
 
@@ -33,7 +33,7 @@ div.thing:not(.comment) div.entry {
         }
 
         .crosspost-preview-content hr.self-divider {
-            border-top: dotted 1px white;
+            border-top: dotted 1px $textColor;
         }
     }
 

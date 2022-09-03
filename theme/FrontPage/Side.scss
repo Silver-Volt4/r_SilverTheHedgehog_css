@@ -13,7 +13,7 @@ div.side {
     .number,
     .word,
     .usertext-body * {
-        color: white;
+        color: $textColor;
     }
 
     .tagline a {
@@ -136,7 +136,7 @@ div.side {
             background-color: limegreen;
 
             h1 {
-                color: white;
+                color: $textColor;
                 font-weight: bold;
             }
         }
