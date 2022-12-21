@@ -1,7 +1,7 @@
-div#siteTable .thing {
+.thing {
     // This allows us to use position: absolute on the expand arrow.
     position: relative;
-    
+
     padding-top: 4px;
     border-left: solid 4px transparent;
 
@@ -61,14 +61,12 @@ div#siteTable .thing {
         }
 
         &.self {
-            background: img("TextPost.png")
-                no-repeat center;
+            background: img("TextPost.png") no-repeat center;
             background-color: $dark;
         }
 
         &.default {
-            background: img("LinkPost.png")
-                no-repeat center;
+            background: img("LinkPost.png") no-repeat center;
             background-color: $dark;
         }
     }
@@ -95,8 +93,7 @@ div#siteTable .thing {
             height: 70px;
 
             &.collapsed {
-                background: img("Expand.png")
-                        no-repeat 116% 118% / 38px 38px,
+                background: img("Expand.png") no-repeat 116% 118% / 38px 38px,
                     radial-gradient(
                         circle 14px at 80% 80%,
                         darken($cyan, 15%) 0%,
@@ -107,8 +104,7 @@ div#siteTable .thing {
             }
 
             &.expanded {
-                background: img("Unexpand.png")
-                        no-repeat 116% 118% / 38px 38px,
+                background: img("Unexpand.png") no-repeat 116% 118% / 38px 38px,
                     radial-gradient(
                         circle 14px at 80% 80%,
                         darken($cyan, 15%) 0%,

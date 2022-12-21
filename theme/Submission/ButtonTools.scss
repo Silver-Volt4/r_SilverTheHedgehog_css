@@ -1,19 +1,34 @@
-body.comments-page {
-    // Shuffle around the elements so that the reply button is first.
-    // Some people might kill me for this. Oh well
-    .thing.comment .entry ul.buttons {
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-    }
-}
-
 .thing:not(.collapsed) .entry {
     ul.buttons {
         font-size: 11px;
         display: flex;
         flex-wrap: wrap;
 
-        > li {
+        > .big-mod-buttons a {
+            @include liftedBoxDark;
+            background-image: none;
+            border: none;
+            margin-left: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            line-height: 20px;
+            vertical-align: middle;
+            font-weight: bold;
+            font-size: 11px;
+
+            &[data-event-action="approve"]::before {
+                content: "|";
+                color: transparent;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                margin-right: 8px;
+                background: img("Approve.png") no-repeat center / 16px 16px;
+            }
+        }
+
+        > li,
+        > .big-mod-buttons a {
             @include liftedBoxDark;
             margin-right: 8px;
             margin-bottom: 8px;
@@ -76,8 +91,7 @@ body.comments-page {
         height: 18px;
         margin-right: 8px;
         // On elements with an unknown action, the icon is a magic wand. Known buttons are re-styled below.
-        background: img("OtherAction.png")
-            no-repeat center / 16px 16px;
+        background: img("OtherAction.png") no-repeat center / 16px 16px;
     }
 
     span.option.error a:before {
@@ -86,110 +100,89 @@ body.comments-page {
     }
 
     &.first > a:before {
-        background: img("Comment.png")
-            no-repeat center / 16px 16px;
+        background: img("Comment.png") no-repeat center / 16px 16px;
     }
 
     &.first > a.bylink:not(.comments):before {
-        background: img("Permalink.png")
-            no-repeat center / 16px 16px;
+        background: img("Permalink.png") no-repeat center / 16px 16px;
     }
 
     a.embed-comment::before {
-        background: img("Embed.png")
-            no-repeat center / 16px 16px;
+        background: img("Embed.png") no-repeat center / 16px 16px;
     }
 
     a.edit-usertext:before {
-        background: img("Edit.png")
-            no-repeat center / 16px 16px;
+        background: img("Edit.png") no-repeat center / 16px 16px;
     }
 
     &.share a:before {
-        background: img("Shared.png")
-            no-repeat center / 16px 16px;
+        background: img("Shared.png") no-repeat center / 16px 16px;
     }
 
     &.save-button a:before {
-        background: img("Save.png")
-            no-repeat center / 16px 16px;
+        background: img("Save.png") no-repeat center / 16px 16px;
     }
 
     form.hide-button a:before {
-        background: img("Hide.png")
-            no-repeat center / 16px 16px;
+        background: img("Hide.png") no-repeat center / 16px 16px;
     }
 
     form.del-button a:before {
-        background: img("DeleteSelf.png")
-            no-repeat center / 16px 16px;
+        background: img("DeleteSelf.png") no-repeat center / 16px 16px;
     }
 
     &.give-gold-button a:before {
-        background: img("Gold.png")
-            no-repeat center / 16px 16px;
+        background: img("Gold.png") no-repeat center / 16px 16px;
     }
 
     form.remove-button {
         span > a:before {
-            background: img("RemoveSpam.png")
-                no-repeat center / 16px 16px;
+            background: img("RemoveSpam.png") no-repeat center / 16px 16px;
         }
 
-        input[name=spam] + span > a:before {
-            background: img("RemovePost.png")
-                no-repeat center / 16px 16px;
+        input[name="spam"] + span > a:before {
+            background: img("RemovePost.png") no-repeat center / 16px 16px;
         }
     }
 
     form.approve-button a:before {
-        background: img("Approve.png")
-            no-repeat center / 16px 16px;
+        background: img("Approve.png") no-repeat center / 16px 16px;
     }
 
     form[action="/post/distinguish"] a:before,
     form[method="post"] a[data-event-action="distinguish"]:before {
-        background: img("Distinguish.png")
-            no-repeat center / 16px 16px;
+        background: img("Distinguish.png") no-repeat center / 16px 16px;
     }
 
     &.report-button a:before {
-        background: img("Report.png")
-            no-repeat center / 16px 16px;
+        background: img("Report.png") no-repeat center / 16px 16px;
     }
 
     form.lock-button a:before {
-        background: img("Lock.png")
-            no-repeat center / 16px 16px;
+        background: img("Lock.png") no-repeat center / 16px 16px;
     }
 
     form.unlock-button a:before {
-        background: img("LockUnlock.png")
-            no-repeat center / 16px 16px;
+        background: img("LockUnlock.png") no-repeat center / 16px 16px;
     }
 
     form.marknsfw-button a:before {
-        background: img("Nsfw.png")
-            no-repeat center / 16px 16px;
+        background: img("Nsfw.png") no-repeat center / 16px 16px;
     }
 
     form.spoiler-button a:before {
-        background: img("Spoiler.png")
-            no-repeat center / 16px 16px;
+        background: img("Spoiler.png") no-repeat center / 16px 16px;
     }
 
     a.flairselectbtn:before {
-        background: img("Flair.png")
-            no-repeat center / 16px 16px;
+        background: img("Flair.png") no-repeat center / 16px 16px;
     }
 
     &.crosspost-button a:before {
-        background: img("Crosspost.png")
-            no-repeat center / 16px 16px;
+        background: img("Crosspost.png") no-repeat center / 16px 16px;
     }
 
     &.reply-button a:before {
-        background: img("Reply.png")
-            no-repeat center / 16px 16px;
+        background: img("Reply.png") no-repeat center / 16px 16px;
     }
 }

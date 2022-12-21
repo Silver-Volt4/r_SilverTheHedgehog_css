@@ -1,7 +1,7 @@
 body {
-    background: linear-gradient(60deg, rgba(255, 255, 255, 1) 7%, rgb(100, 247, 255) 93%);
+    background: linear-gradient(60deg, rgba(0, 0, 0, 1) 7%, rgba(0, 80, 84, 1) 93%);
     background: img("silversilhouette.png") no-repeat right fixed,
-        linear-gradient(60deg, rgba(255, 255, 255, 1) 7%, rgb(143, 249, 255) 93%) fixed;
+        linear-gradient(60deg, rgba(0, 0, 0, 1) 7%, rgba(0, 80, 84, 1) 93%) fixed;
     background-color: rgba(0, 0, 0, 0);
     background-repeat: repeat, repeat;
     background-repeat: no-repeat;
